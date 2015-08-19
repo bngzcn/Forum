@@ -8,6 +8,12 @@
   <%= @topic.user.email %>
 </p>
 
+<p>
+ 
+<strong>
+  <%= time_for(@topic) %>
+</strong></p>
+
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
 <%= link_to 'Back', topics_path %>
 <% if can? :create, @topic %>
